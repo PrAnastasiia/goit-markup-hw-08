@@ -1,0 +1,89 @@
+.benefits {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  //   padding-top: 94px;
+  //   padding-bottom: 94px;
+  //
+}
+
+.benefits__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.benefits__item {
+  width: 450px;
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    height: 120px;
+    background-color: #f5f4fa;
+    background-position: center;
+    background-size: 70px;
+    background-repeat: no-repeat;
+  }
+}
+
+.icon-attention::before {
+  background-image: url(../images/icon/benefits1.svg);
+}
+
+.icon-punctuality::before {
+  background-image: url(../images/icon/benefits2.svg);
+}
+
+.icon-planning::before {
+  background-image: url(../images/icon/benefits3.svg);
+}
+
+.icon-technologies::before {
+  background-image: url(../images/icon/benefits4.svg);
+}
+
+.benefits__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $titleTextColor;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.benefits__descr {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $primaryTextColor;
+}

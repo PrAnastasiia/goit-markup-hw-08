@@ -34,8 +34,9 @@
 }
 
 .benefits__item {
-  width: 450px;
-
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
   @media screen and (min-width: $tablet) {
     width: 354px;
   }

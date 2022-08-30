@@ -245,6 +245,8 @@ body {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 h1,
@@ -505,8 +507,10 @@ ul {
   }
 }
 
-.benefits__item {
-  width: 450px;
+@media screen and (min-width: 480px) {
+  .benefits__item {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .benefits__item {
@@ -571,9 +575,13 @@ ul {
 
 .team__item {
   background-color: #ffffff;
-  width: 450px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 480px) {
+  .team__item {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__item {
@@ -846,10 +854,20 @@ footer {
   justify-content: center;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .icon-social__list {
+    justify-content: start;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .icon-social {
     width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icon-social {
+    justify-content: start;
   }
 }
 
@@ -870,7 +888,7 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .subscription {
-    margin-left: 93px;
+    margin-left: auto;
   }
 }
 
@@ -899,7 +917,7 @@ footer {
 }
 
 .subscription__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -908,6 +926,16 @@ footer {
   background: transparent;
   outline: none;
   color: #757575;
+}
+@media screen and (min-width: 480px) {
+  .subscription__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscription__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscription__input {

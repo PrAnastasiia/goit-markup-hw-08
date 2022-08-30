@@ -1,11 +1,15 @@
-// .header {
-//   border-bottom: 1px solid #ececec;
-//   background: #ffffff;
+.header {
+  border-bottom: 1px solid #ececec;
+  background: #ffffff;
 
-//   width: 100%;
-//   display: flex;
-//   justify-content: space-between;
-// }
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
 
 .menu-btn {
   padding: 0;
@@ -146,6 +150,20 @@
 }
 
 .nav__link--active {
+  @media screen and (min-width: $tablet) {
+    color: $accentColor;
+    &::after {
+      content: '';
+      width: 100%;
+      height: 4px;
+      bottom: -1.5px;
+      left: 0;
+      background: $accentColor;
+      border-radius: 2px;
+      display: block;
+      position: absolute;
+    }
+  }
   @media screen and (min-width: $desktop) {
     color: $accentColor;
     &::after {

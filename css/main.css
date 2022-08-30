@@ -302,6 +302,22 @@ ul {
   overflow: hidden;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+  background: #ffffff;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    display: flex;
+  }
+}
+
 .menu-btn {
   padding: 0;
   height: 40px;
@@ -444,6 +460,22 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .nav__link--active {
+    color: #2196f3;
+  }
+  .nav__link--active::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: -1.5px;
+    left: 0;
+    background: #2196f3;
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+  }
+}
 @media screen and (min-width: 1200px) {
   .nav__link--active {
     color: #2196f3;
@@ -1096,13 +1128,23 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1138,9 +1180,21 @@ footer {
 
 .form {
   text-align: center;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
+}
+@media screen and (min-width: 768px) {
+  .form {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .form__title {
@@ -1195,14 +1249,26 @@ footer {
   padding: 11px 12px 11px 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
+  width: 370px;
   height: 40px;
-  color: var(--main-text-color);
+  color: #757575;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__input input:focus-within {
   border: 1px solid #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .form__input input {
+    width: 370px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__input input {
+    width: 448px;
+    height: 40px;
+  }
 }
 
 .form__textarea {
@@ -1262,10 +1328,20 @@ footer {
 }
 
 .form__checkbox-text {
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 768px) {
+  .form__checkbox-text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__checkbox-text {
+    font-size: 14px;
+  }
 }
 
 .form__checkbox-input:focus-within + .form__checkbox-text span {

@@ -6,6 +6,9 @@
   line-height: 1.9;
   color: #000000;
   text-decoration: none;
+  @media screen and (min-width: $tablet) {
+    margin-right: 87px;
+  }
 }
 
 .header__logo--blue {

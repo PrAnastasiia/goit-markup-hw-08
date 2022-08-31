@@ -22,12 +22,102 @@
           <a href="./index.html" class="header__logo"
             ><span class="header__logo--blue">Web</span>Studio</a
           >
-           <button class="menu-btn" aria-expanded="false" data-menu-button>
+           <button type="button" class="menu-btn" aria-expanded="false" data-menu-btn>
                 <svg class="menu-btn__icons" width="40" height="40" aria-label="Перемикач мобільного меню">
-                   
                     <use class="menu-btn__icon--menu" href="./images/icons.svg#icon-menu"></use>
+                    <use class="mobile-menu-btn__icon-close" href="./images/icons.svg#icon-modal-close"></use>
                 </svg>
             </button>
+
+          
+
+                  <!-- Mobile Menu -->
+          <div class="mobile-backdrop" data-menu>
+            <div class="container mobile-backdrop__container">
+              <div class="mobile-menu" id="menu" data-menu-page>
+
+                <ul class="mobile-site-nav list--not-decoration">
+                  <li class="mobile-site-nav__item">
+                    <a
+                      class="mobile-site-nav__link mobile-site-nav__link--active"
+                      href="./index.html"
+                      >Студия</a
+                    >
+                  </li>
+
+                  <li class="mobile-site-nav__item">
+                    <a class="mobile-site-nav__link" href="./portfolio.html">Портфолио</a>
+                  </li>
+
+                  <li class="mobile-site-nav__item">
+                    <a class="mobile-site-nav__link" href="#contacts">Контакты</a>
+                  </li>
+                </ul>
+
+                <ul class="mobile-contacts list--not-decoration">
+                  <li class="mobile-contacts__item">
+                    <a class="mobile-contacts__link" href="tel:+380961111111">
+                      +38 096 111 11 11
+                    </a>
+                  </li>
+
+                  <li class="mobile-contacts__item">
+                    <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+                      info@devstudio.com
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="social list--not-decoration">
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="nofollow noreferrer"
+                      aria-label="instagram"
+                    >Instagram
+
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="nofollow noreferrer"
+                      aria-label="twitter"
+                    >Twitter
+                      
+                    </a>
+                  </li>
+
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="nofollow noreferrer"
+                      aria-label="facebook"
+                    >Facebook
+                      
+                    </a>
+                  </li>
+
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="nofollow noreferrer"
+                      aria-label="linkedin"
+                    >LinkedIn
+                      
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
        
 
 
@@ -148,8 +238,23 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list--not-decoration team__list">
             <li class="team__item">
+                <picture>
+                            <source type="image/webp" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
+                                srcset="./images/studio/members/mobile/member-1-450.jpg 450w,
+                            ./images/studio/members/mobile/member-1-900.jpg 900w" />
+
+                            <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                                sizes="(min-width: 354px) 354px, 50vw" srcset="./images/studio/members/tablet/member-1-354.jpg 354w,
+                            ./images/studio/members/tablet/member-1-708.jpg 708w" />
+
+                            <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
+                                srcset="./images/studio/members/desktop/member-1-270.jpg 270w,
+                            ./images/studio/members/desktop/member-1-540.jpg 540w" />
+
+                        </picture>
+
               <img
-                src="./images/studio/igor_dem.jpg"
+                src="./images/studio/members/team_card_1.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
                 height="260"
@@ -512,5 +617,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -1530,11 +1530,6 @@ footer {
   transition: transform 370ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 370ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 370ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) {
-  .mobile-menu {
-    align-items: flex-start;
-  }
-}
 
 .mobile-backdrop--is-open .mobile-menu {
   -webkit-transform: translateX(0);
@@ -1543,6 +1538,9 @@ footer {
 
 .menu-btn {
   z-index: 2;
+}
+.menu-btn:active {
+  fill: #2196f3;
 }
 
 .mobile-menu-btn {

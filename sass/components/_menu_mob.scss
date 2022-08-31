@@ -125,6 +125,15 @@
   font-size: 20px;
   line-height: 1.176;
   color: #212121;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  &:active {
+    color: #2196f3;
+  }
 }
 .mobile-site-nav__link--active {
   position: relative;
@@ -157,11 +166,22 @@
 
 .social {
   display: flex;
-  gap: 20px;
+  // gap: 20px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+.social__item {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 0 10px 0 10px;
+}
+.social__item--first {
+  padding-left: 0;
+}
+.social__item--last {
+  padding-right: 0;
+  border: none;
 }
 .social__link {
   color: #2196f3;
@@ -170,4 +190,14 @@
 
 .mobile-menu-btn--is-open .menu-btn__icon--menu {
   display: none;
+}
+
+.mobile__number {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
 }

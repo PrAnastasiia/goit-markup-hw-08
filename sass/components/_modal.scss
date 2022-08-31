@@ -37,9 +37,7 @@
 .modal {
   position: relative;
   padding: 40px;
-
   width: 100%;
-
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -58,14 +56,22 @@
 
   @media screen and (min-width: $mobile) {
     position: absolute;
-    top: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 450px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     width: 450px;
     height: 609px;
   }
-
   @media screen and (min-width: $desktop) {
     width: 528px;
     height: 581px;
@@ -143,14 +149,6 @@
 .form {
   text-align: center;
   width: 100%;
-  @media screen and (min-width: $tablet) {
-    width: 450px;
-    height: 609px;
-  }
-  @media screen and (min-width: $desktop) {
-    width: 528px;
-    height: 581px;
-  }
 }
 
 .form__title {

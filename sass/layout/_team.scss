@@ -2,6 +2,10 @@
   background: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__item {

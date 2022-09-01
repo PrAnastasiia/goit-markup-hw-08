@@ -733,6 +733,16 @@ a {
   margin-top: 30px;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__title {
+    text-align: left;
+  }
+}
 
 .benefits__descr {
   font-size: 14px;

@@ -822,7 +822,12 @@ a {
 }
 
 .team__content {
-  padding: 30px 30px;
+  padding: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team__content {
+    padding: 30px;
+  }
 }
 
 .icon__link {
@@ -912,6 +917,12 @@ a {
 .customers {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .customers__list {

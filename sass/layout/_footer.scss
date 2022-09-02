@@ -48,8 +48,10 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 60px;
   margin-bottom: 20px;
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+  }
 }
 .footer__content {
   display: flex;
@@ -74,7 +76,7 @@ footer {
 }
 
 .all-contacts {
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
     width: 50%;
 
@@ -97,7 +99,7 @@ footer {
 }
 
 .icon-social {
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: 1199px) {
     width: 50%;
   }
   @media screen and (min-width: $desktop) {

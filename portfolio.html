@@ -14,40 +14,42 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    
-       <header class="header">
+    <header class="header">
       <div class="header__menu container">
         <nav class="header__nav">
-          
           <a href="./index.html" class="header__logo"
             ><span class="header__logo--blue">Web</span>Studio</a
           >
-           <button type="button" class="menu-btn" aria-expanded="false" data-menu-btn>
-                <svg class="menu-btn__icons" width="40" height="40" aria-label="Перемикач мобільного меню">
-                    <use class="menu-btn__icon--menu" href="./images/icons.svg#icon-menu"></use>
-                    <use class="mobile-menu-btn__icon-close" href="./images/icons.svg#icon-modal-close"></use>
-                </svg>
-            </button>
-           
+          <button type="button" class="menu-btn" aria-expanded="false" data-menu-btn>
+            <svg
+              class="menu-btn__icons"
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use class="menu-btn__icon--menu" href="./images/icons.svg#icon-menu"></use>
+              <use
+                class="mobile-menu-btn__icon-close"
+                href="./images/icons.svg#icon-modal-close"
+              ></use>
+            </svg>
+          </button>
 
-          
-
-                  <!-- Mobile Menu -->
+          <!-- Mobile Menu -->
           <div class="mobile-backdrop" data-menu>
             <div class="container mobile-backdrop__container">
               <div class="mobile-menu" id="menu" data-menu-page>
-
                 <ul class="mobile-site-nav list--not-decoration">
                   <li class="mobile-site-nav__item">
-                    <a
-                      class="mobile-site-nav__link "
-                      href="./index.html"
-                      >Студія</a
-                    >
+                    <a class="mobile-site-nav__link" href="./index.html">Студія</a>
                   </li>
 
                   <li class="mobile-site-nav__item">
-                    <a class="mobile-site-nav__link mobile-site-nav__link--active" href="./portfolio.html">Портфоліо</a>
+                    <a
+                      class="mobile-site-nav__link mobile-site-nav__link--active"
+                      href="./portfolio.html"
+                      >Портфоліо</a
+                    >
                   </li>
 
                   <li class="mobile-site-nav__item">
@@ -77,17 +79,18 @@
                       target="_blank"
                       rel="nofollow noreferrer"
                       aria-label="instagram"
-                    >Instagram
+                      >Instagram</a
+                    >
+                  </li>
 
                   <li class="social__item social__item--border">
                     <a
-                      class="social__link "
+                      class="social__link"
                       href="https://twitter.com/"
                       target="_blank"
                       rel="nofollow noreferrer"
                       aria-label="twitter"
-                    >Twitter
-                      
+                      >Twitter
                     </a>
                   </li>
 
@@ -98,8 +101,7 @@
                       target="_blank"
                       rel="nofollow noreferrer"
                       aria-label="facebook"
-                    >Facebook
-                      
+                      >Facebook
                     </a>
                   </li>
 
@@ -110,8 +112,7 @@
                       target="_blank"
                       rel="nofollow noreferrer"
                       aria-label="linkedin"
-                    >LinkedIn
-                      
+                      >LinkedIn
                     </a>
                   </li>
                 </ul>
@@ -119,14 +120,15 @@
             </div>
           </div>
         </nav>
-       
 
-
+        <nav>
           <ul class="nav list--not-decoration">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link ">Студія</a>
+              <a href="./index.html" class="nav__link">Студія</a>
             </li>
-            <li class="nav__item"><a href="./portfolio.html" class="nav__link nav__link--active">Портфоліо</a></li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link nav__link--active">Портфоліо</a>
+            </li>
             <li class="nav__item"><a href="@" class="nav__link">Контакти</a></li>
           </ul>
         </nav>
@@ -150,7 +152,6 @@
       </div>
     </header>
 
-
     <main>
       <section class="portfolio">
         <div class="container">
@@ -168,22 +169,44 @@
               <a href="@" class="portfolio__link">
                 <div class="portfolio__content">
                   <picture>
-                            <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
-                                srcset="./images/portfolio/mobile/notebook-first-450.jpg 1x,
-                            ./images/portfolio/mobile/notebook-first-900.jpg 2x" />
-
-                            <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
-                                sizes="(min-width: 354px) 354px, 50vw" 
-                                srcset="./images/portfolio/tablet/notebook-first-354.jpg 1x,
-                            ./images/portfolio/tablet/notebook-first-708.jpg 2x" />
-
-                            <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
-                                srcset="./images/portfolio/desktop/notebook-second-370.jpg 1x,
-                            ./images/portfolio/desktop/notebook-second-740.jpg " />
-                  <img src="./images/portfolio/img1.jpg" alt="Веб-сайт" width="370" height="296" />
+                    <source
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 320px) 320px,90vw"
+                      srcset="
+                        ./images/portfolio/mobile/notebook-first-450.jpg 450w,
+                        ./images/portfolio/mobile/notebook-first-900.jpg 900w
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 354px) 354px, 50vw"
+                      srcset="
+                        ./images/portfolio/tablet/notebook-first-354.jpg 354w,
+                        ./images/portfolio/tablet/notebook-first-708.jpg 708w
+                      "
+                    />
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 270px) 270px, 25vw"
+                      srcset="
+                        ./images/portfolio/desktop/notebook-second-370.jpg 370w,
+                        ./images/portfolio/desktop/notebook-second-740.jpg 740w
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/img1.jpg"
+                      alt="Веб-сайт"
+                      width="370"
+                      height="296"
+                    />
                   </picture>
                   <p class="portfolio__content-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
 
@@ -198,23 +221,42 @@
               <a href="@" class="portfolio__link">
                 <div class="portfolio__content">
                   <picture>
-                            <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
-                                srcset="./images/portfolio/mobile/nba-450.jpg 1x,
-                            ./images/portfolio/mobile/nba-900.jpg 2x" />
+                    <source
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 320px) 320px,90vw"
+                      srcset="
+                        ./images/portfolio/mobile/nba-450.jpg 450w,
+                        ./images/portfolio/mobile/nba-900.jpg 900w
+                      "
+                    />
 
-                            <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
-                                sizes="(min-width: 354px) 354px, 50vw" 
-                                srcset="./images/portfolio/tablet/nba-354.jpg 1x,
-                            ./images/portfolio/tablet/nba-708.jpg 2x" />
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 354px) 354px, 50vw"
+                      srcset="
+                        ./images/portfolio/tablet/nba-354.jpg 354w,
+                        ./images/portfolio/tablet/nba-708.jpg 708w
+                      "
+                    />
 
-                            <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
-                                srcset="./images/portfolio/desktop/nba-370.jpg 1x,
-                            ./images/portfolio/desktop/nba-740.jpg " />
-                  <img src="./images/portfolio/img2.jpg" alt="Постер" width="370" />
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 270px) 270px, 25vw"
+                      srcset="
+                        ./images/portfolio/desktop/nba-370.jpg 370w,
+                        ./images/portfolio/desktop/nba-740.jpg 740w
+                      "
+                    />
+                    <img src="./images/portfolio/img2.jpg" alt="Постер" width="370" />
                   </picture>
 
                   <p class="portfolio__content-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
@@ -227,23 +269,42 @@
               <a href="@" class="portfolio__link">
                 <div class="portfolio__content">
                   <picture>
-                            <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
-                                srcset="./images/portfolio/mobile/seafood-450.jpg 1x,
-                            ./images/portfolio/mobile/seafood-900.jpg 2x" />
+                    <source
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 320px) 320px,90vw"
+                      srcset="
+                        ./images/portfolio/mobile/seafood-450.jpg 450w,
+                        ./images/portfolio/mobile/seafood-900.jpg 900w
+                      "
+                    />
 
-                            <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
-                                sizes="(min-width: 354px) 354px, 50vw" 
-                                srcset="./images/portfolio/tablet/seafood-354.jpg 1x,
-                            ./images/portfolio/tablet/seafood-708.jpg 2x" />
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 354px) 354px, 50vw"
+                      srcset="
+                        ./images/portfolio/tablet/seafood-354.jpg 354w,
+                        ./images/portfolio/tablet/seafood-708.jpg 708w
+                      "
+                    />
 
-                            <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
-                                srcset="./images/portfolio/desktop/seafood-370.jpg 1x,
-                            ./images/portfolio/desktop/seafood-740.jpg " />
-                  <img src="./images/portfolio/img3.jpg" alt="Приложение" width="370" />
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 270px) 270px, 25vw"
+                      srcset="
+                        ./images/portfolio/desktop/seafood-370.jpg 370w,
+                        ./images/portfolio/desktop/seafood-740.jpg 740w
+                      "
+                    />
+                    <img src="./images/portfolio/img3.jpg" alt="Приложение" width="370" />
                   </picture>
 
                   <p class="portfolio__content-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
@@ -256,22 +317,41 @@
               <a href="@" class="portfolio__link">
                 <div class="portfolio__content">
                   <picture>
-                            <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
-                                srcset="./images/portfolio/mobile/headphones-450.jpg 1x,
-                            ./images/portfolio/mobile/headphones-900.jpg 2x" />
+                    <source
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 320px) 320px,90vw"
+                      srcset="
+                        ./images/portfolio/mobile/headphones-450.jpg 450w,
+                        ./images/portfolio/mobile/headphones-900.jpg 900w
+                      "
+                    />
 
-                            <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
-                                sizes="(min-width: 354px) 354px, 50vw" 
-                                srcset="./images/portfolio/tablet/headphones-354.jpg 1x,
-                            ./images/portfolio/tablet/headphones-708.jpg 2x" />
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 354px) 354px, 50vw"
+                      srcset="
+                        ./images/portfolio/tablet/headphones-354.jpg 354w,
+                        ./images/portfolio/tablet/headphones-708.jpg 708w
+                      "
+                    />
 
-                            <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
-                                srcset="./images/portfolio/desktop/headphones-370.jpg 1x,
-                            ./images/portfolio/desktop/headphones-740.jpg " />
-                  <img src="./images/portfolio/img4.jpg" alt="Маркетинг" width="370" />
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 270px) 270px, 25vw"
+                      srcset="
+                        ./images/portfolio/desktop/headphones-370.jpg 370w,
+                        ./images/portfolio/desktop/headphones-740.jpg 740w
+                      "
+                    />
+                    <img src="./images/portfolio/img4.jpg" alt="Маркетинг" width="370" />
                   </picture>
                   <p class="portfolio__content-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
@@ -283,23 +363,42 @@
             <li class="portfolio__item">
               <a href="@" class="portfolio__link">
                 <div class="portfolio__content">
-                   <picture>
-                            <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
-                                srcset="./images/portfolio/mobile/boxes-450.jpg 1x,
-                            ./images/portfolio/mobile/boxes-900.jpg 2x" />
+                  <picture>
+                    <source
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 320px) 320px,90vw"
+                      srcset="
+                        ./images/portfolio/mobile/boxes-450.jpg 450w,
+                        ./images/portfolio/mobile/boxes-900.jpg 900w
+                      "
+                    />
 
-                            <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
-                                sizes="(min-width: 354px) 354px, 50vw" 
-                                srcset="./images/portfolio/tablet/boxes-354.jpg 1x,
-                            ./images/portfolio/tablet/boxes-708.jpg 2x" />
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 354px) 354px, 50vw"
+                      srcset="
+                        ./images/portfolio/tablet/boxes-354.jpg 354w,
+                        ./images/portfolio/tablet/boxes-708.jpg 708w
+                      "
+                    />
 
-                            <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
-                                srcset="./images/portfolio/desktop/boxes-370.jpg 1x,
-                            ./images/portfolio/desktop/boxes-740.jpg " />
-                  <img src="./images/portfolio/img5.jpg" alt="Приложение" width="370" />
-                   </picture>
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 270px) 270px, 25vw"
+                      srcset="
+                        ./images/portfolio/desktop/boxes-370.jpg 370w,
+                        ./images/portfolio/desktop/boxes-740.jpg 740w
+                      "
+                    />
+                    <img src="./images/portfolio/img5.jpg" alt="Приложение" width="370" />
+                  </picture>
                   <p class="portfolio__content-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
@@ -312,22 +411,41 @@
               <a href="@" class="portfolio__link">
                 <div class="portfolio__content">
                   <picture>
-                            <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
-                                srcset="./images/portfolio/mobile/imac-450.jpg 1x,
-                            ./images/portfolio/mobile/imac-900.jpg 2x" />
+                    <source
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 320px) 320px,90vw"
+                      srcset="
+                        ./images/portfolio/mobile/imac-450.jpg 450w,
+                        ./images/portfolio/mobile/imac-900.jpg 900w
+                      "
+                    />
 
-                            <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
-                                sizes="(min-width: 354px) 354px, 50vw" 
-                                srcset="./images/portfolio/tablet/imac-354.jpg 1x,
-                            ./images/portfolio/tablet/imac-708.jpg 2x" />
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 354px) 354px, 50vw"
+                      srcset="
+                        ./images/portfolio/tablet/imac-354.jpg 354w,
+                        ./images/portfolio/tablet/imac-708.jpg 708w
+                      "
+                    />
 
-                            <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
-                                srcset="./images/portfolio/desktop/imac-370.jpg 1x,
-                            ./images/portfolio/desktop/imac-740.jpg " />
-                  <img src="./images/portfolio/img6.jpg" alt="Веб-сайт" width="370" />
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 270px) 270px, 25vw"
+                      srcset="
+                        ./images/portfolio/desktop/imac-370.jpg 370w,
+                        ./images/portfolio/desktop/imac-740.jpg 740w
+                      "
+                    />
+                    <img src="./images/portfolio/img6.jpg" alt="Веб-сайт" width="370" />
                   </picture>
                   <p class="portfolio__content-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
@@ -340,24 +458,42 @@
               <a href="@" class="portfolio__link">
                 <div class="portfolio__content">
                   <picture>
-                            <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
-                                srcset="./images/portfolio/mobile/magazine-450.jpg 1x,
-                            ./images/portfolio/mobile/magazine-900.jpg 2x" />
+                    <source
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 320px) 320px,90vw"
+                      srcset="
+                        ./images/portfolio/mobile/magazine-450.jpg 450w,
+                        ./images/portfolio/mobile/magazine-900.jpg 900w
+                      "
+                    />
 
-                            <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
-                                sizes="(min-width: 354px) 354px, 50vw" 
-                                srcset="./images/portfolio/tablet/magazine-354.jpg 1x,
-                            ./images/portfolio/tablet/magazine-708.jpg 2x" />
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 354px) 354px, 50vw"
+                      srcset="
+                        ./images/portfolio/tablet/magazine-354.jpg 354w,
+                        ./images/portfolio/tablet/magazine-708.jpg 708w
+                      "
+                    />
 
-                            <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
-                                srcset="./images/portfolio/desktop/magazine-370.jpg 1x,
-                            ./images/portfolio/desktop/magazine-740.jpg " />
-                  <img src="./images/portfolio/img7.jpg" alt="Дизайн" width="370" />
-                          </picture>
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 270px) 270px, 25vw"
+                      srcset="
+                        ./images/portfolio/desktop/magazine-370.jpg 370w,
+                        ./images/portfolio/desktop/magazine-740.jpg 740w
+                      "
+                    />
+                    <img src="./images/portfolio/img7.jpg" alt="Дизайн" width="370" />
+                  </picture>
 
-                  
                   <p class="portfolio__content-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
@@ -369,24 +505,42 @@
             <li class="portfolio__item">
               <a href="@" class="portfolio__link">
                 <div class="portfolio__content">
-
                   <picture>
-                            <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
-                                srcset="./images/portfolio/mobile/label-450.jpg 1x,
-                            ./images/portfolio/mobile/label-900.jpg 2x" />
+                    <source
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 320px) 320px,90vw"
+                      srcset="
+                        ./images/portfolio/mobile/label-450.jpg 450w,
+                        ./images/portfolio/mobile/label-900.jpg 900w
+                      "
+                    />
 
-                            <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
-                                sizes="(min-width: 354px) 354px, 50vw" 
-                                srcset="./images/portfolio/tablet/label-354.jpg 1x,
-                            ./images/portfolio/tablet/label-708.jpg 2x" />
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 354px) 354px, 50vw"
+                      srcset="
+                        ./images/portfolio/tablet/label-354.jpg 354w,
+                        ./images/portfolio/tablet/label-708.jpg 708w
+                      "
+                    />
 
-                            <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
-                                srcset="./images/portfolio/desktop/label-370.jpg 1x,
-                            ./images/portfolio/desktop/label-740.jpg " />
-                  <img src="./images/portfolio/img8.jpg" alt="Маркетинг" width="370" />
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 270px) 270px, 25vw"
+                      srcset="
+                        ./images/portfolio/desktop/label-370.jpg 370w,
+                        ./images/portfolio/desktop/label-740.jpg 740w
+                      "
+                    />
+                    <img src="./images/portfolio/img8.jpg" alt="Маркетинг" width="370" />
                   </picture>
                   <p class="portfolio__content-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
@@ -399,24 +553,42 @@
               <a href="@" class="portfolio__link">
                 <div class="portfolio__content">
                   <picture>
-                            <source type="image/jpeg" media="(max-width: 767px)" sizes="(min-width: 320px) 320px,90vw"
-                                srcset="./images/portfolio/mobile/notebook-second-450.jpg 1x,
-                            ./images/portfolio/mobile/notebook-second-900.jpg 2x" />
+                    <source
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 320px) 320px,90vw"
+                      srcset="
+                        ./images/portfolio/mobile/notebook-second-450.jpg 450w,
+                        ./images/portfolio/mobile/notebook-second-900.jpg 900w
+                      "
+                    />
 
-                            <source type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
-                                sizes="(min-width: 354px) 354px, 50vw" 
-                                srcset="./images/portfolio/tablet/notebook-second-354.jpg 1x,
-                            ./images/portfolio/tablet/notebook-second-708.jpg 2x" />
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 354px) 354px, 50vw"
+                      srcset="
+                        ./images/portfolio/tablet/notebook-second-354.jpg 354w,
+                        ./images/portfolio/tablet/notebook-second-708.jpg 708w
+                      "
+                    />
 
-                            <source type="image/jpeg" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 25vw"
-                                srcset="./images/portfolio/desktop/notebook-second-370.jpg 1x,
-                            ./images/portfolio/desktop/notebook-second-740.jpg " />
-                  <img src="./images/portfolio/img9.jpg" alt="Приложение" width="370" />
-
+                    <source
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 270px) 270px, 25vw"
+                      srcset="
+                        ./images/portfolio/desktop/notebook-second-370.jpg 370w,
+                        ./images/portfolio/desktop/notebook-second-740.jpg 740w
+                      "
+                    />
+                    <img src="./images/portfolio/img9.jpg" alt="Приложение" width="370" />
                   </picture>
 
                   <p class="portfolio__content-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="portfolio__text">
@@ -429,7 +601,7 @@
         </div>
       </section>
     </main>
-<footer class="footer">
+    <footer class="footer">
       <div class="container footer__content">
         <div class="all-contacts">
           <a href="./index.html" class="all-contacts__logo"
@@ -441,7 +613,7 @@
               <li class="address__list">
                 <a href="mailto:info@devstudio.com" class="address__email">info@devstudio.com</a>
               </li>
-              <li">
+              <li>
                 <a href="tel:+380961111111" class="address__number">+38 096 111 11 11</a>
               </li>
             </ul>
@@ -485,12 +657,17 @@
         <div class="subscription">
           <h2 class="subscription__title">Підпишіться на розсилку</h2>
           <form name="subscription__form" class="subscription__form">
-            <input type="email" id="subscription" placeholder="E-mail" class="subscription__input" />
+            <input
+              type="email"
+              id="subscription"
+              placeholder="E-mail"
+              class="subscription__input"
+            />
             <button type="submit" class="subscription__btn">Підписатися</button>
           </form>
         </div>
       </div>
     </footer>
-<script src="./js/menu.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

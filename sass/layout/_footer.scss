@@ -44,7 +44,7 @@ footer {
 .icon-social__cta {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -78,21 +78,20 @@ footer {
 .all-contacts {
   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
-    width: 50%;
-
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) {
       width: 50%;
     }
   }
   @media screen and (min-width: $desktop) {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 .icon-social__list {
   display: flex;
   gap: 10px;
   justify-content: center;
-  margin-bottom: 60px;
+
   @media screen and (min-width: $desktop) {
     justify-content: start;
   }
@@ -101,9 +100,12 @@ footer {
 .icon-social {
   @media screen and (max-width: 1199px) {
     width: 50%;
+
+    margin-bottom: 60px;
   }
   @media screen and (min-width: $desktop) {
     justify-content: start;
+    margin-right: 60px;
   }
 }
 
@@ -152,7 +154,7 @@ footer {
 .subscription__title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -169,7 +171,7 @@ footer {
   background: transparent;
   outline: none;
   color: $primaryTextColor;
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: 767рх) {
     width: 450px;
   }
   @media screen and (min-width: $tablet) {

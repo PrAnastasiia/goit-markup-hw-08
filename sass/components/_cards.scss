@@ -50,13 +50,10 @@
 
   @media screen and (min-width: $tablet) {
     max-width: 354px;
-    // max-width: calc(100% / 2 - 30px);
-    // margin-bottom: 30px;
   }
 
   @media screen and (min-width: $desktop) {
     max-width: 370px;
-    // max-width: calc(100% / 3 - 60px);
   }
 }
 

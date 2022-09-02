@@ -242,6 +242,7 @@ summary {
 body {
   font-family: "Roboto";
   color: #757575;
+  padding-top: 60px;
 }
 
 img {
@@ -308,9 +309,13 @@ a {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
   border-bottom: 1px solid #ececec;
   background: #ffffff;
-  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -561,7 +566,7 @@ a {
   max-width: 1600px;
   padding: 118px 0;
   background: #2f303a;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/background/hero-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/background-mobile@2x.jpg);
   background-position: center;
   margin: 0 auto;
   background-repeat: no-repeat;

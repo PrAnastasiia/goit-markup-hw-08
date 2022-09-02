@@ -554,10 +554,6 @@ a {
 
 .header__logo--blue {
   font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.9;
   color: #2196f3;
 }
 
@@ -1650,6 +1646,7 @@ footer {
 
 .mobile-site-nav {
   margin-bottom: 32px;
+  height: 100%;
 }
 
 .mobile-site-nav__link {

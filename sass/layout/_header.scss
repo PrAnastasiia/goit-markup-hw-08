@@ -8,6 +8,8 @@
 
   @media screen and (max-width: 767px) {
     position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   @media screen and (min-width: $tablet) {
